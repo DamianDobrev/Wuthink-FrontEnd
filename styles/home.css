@@ -1,0 +1,35 @@
+
+.bigInfo {
+	padding: 5px;
+}
+.bigInfo div {
+	border: 1px solid #1976D2;
+	padding: 10px;
+	text-align: center;
+}
+.bigInfo div span:nth-child(1) {
+	width: 100%;
+	display: block;
+	font-size: 44px;
+	color: #1976D2;
+	margin: 20px 0;
+}
+.bigInfo div span:nth-child(2) {
+	width: 100%;
+	display: block;
+	font-size: 20px;
+	color: #212121;
+	margin: 20px 0;
+}
+
+.bigInfo div:hover span:nth-child(1){
+	color: #212121;
+}
+
+.bigInfo div:hover span:nth-child(2){
+	color: #1976D2;
+}
+
+.lmar {
+	padding: 10px 5px;
+}

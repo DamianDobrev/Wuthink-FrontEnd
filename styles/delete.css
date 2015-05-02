@@ -1,0 +1,15 @@
+.questionIrl {
+	font-size: 20px;
+	margin: 5px 0;
+	background: #1976D2;
+	padding: 10px;
+	color: #ffffff;
+}
+
+.quote {
+	font-size: 20px;
+	color: #000000;
+	font-style: italic;
+	margin: 40px 0;
+	display: block;
+}

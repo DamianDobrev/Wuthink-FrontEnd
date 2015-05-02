@@ -1,0 +1,49 @@
+#answers {
+	width: 100%;
+	margin: 0 0 10px 0;
+	border-top: 1px solid #eee;
+}
+
+#answers li {
+	width: 100%;
+	border-bottom: 1px solid #eee;
+	min-height: 60px;
+	line-height: 30px;
+	padding: 15px 0;
+	vertical-align: middle;
+	position: relative;
+}
+
+#answers li span:first-child {
+	font-size: 17px;
+	min-height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 0 5px;
+}
+#answers li label {
+	vertical-align: middle;
+}
+
+.votes {
+	position: absolute;
+	right: 0 !important;
+	display: block;
+	top: 0;
+	vertical-align: top;
+	height: 20px;
+}
+
+.votes span {
+	vertical-align: top;
+	line-height: 20px;
+}
+
+.votes span:nth-child(1){
+	color: #1976D2;
+	font-size: 11px;
+}
+.votes span:nth-child(2){
+	font-size: 13px;
+	color: #ccc;
+}

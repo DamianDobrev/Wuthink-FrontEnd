@@ -1,0 +1,7 @@
+<div class="page">
+	<h2 class="title">Delete question</h2>
+	<div class="questionIrl">Are you sure you want to delete this question:</div>
+	<span class="quote">"{{$question.Text}}"</span>
+	<button class="fancyButtonBlue transitionFast" ng-click="$deleteQuestion()">Yes</button>
+	<a href="#/question/{{$question.Id}}"><button class="fancyButtonBlue transitionFast">No</button></a>
+</div>

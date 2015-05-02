@@ -1,0 +1,39 @@
+<div class="page">
+	<h2 class="title">Browse questions</h2>
+	<article class="filter container">
+		<div class="filterElement search">
+			<span>Tags</span>
+			<input type="text" ng-model="$tags">
+			<button class="fancyButtonGrey transitionFast searchButton" ng-click="$search()">Filter!</button>
+		</div>
+	</article>
+	<div id="sort">
+		<div class="trSelectButton" id="sortSelectButton" ng-click="showOptions = !showOptions" ng-init="showOptions=false">
+			<span ng-bind="$sortBy" ng-init="$sortBy='date'"></span>
+			<div class="arrowDown"></div>
+		</div>
+		<ul class="trOptions" ng-show="showOptions">
+			<li ng-click="$sortBy='date'; showOptions=false; $search()">Date</li>
+			<li ng-click="$sortBy='popularity'; showOptions=false; $search()">Popularity</li>
+		</ul>
+	</div>
+	<div id="questionContainer">
+		<ul>
+			<li ng-repeat="question in $questions">
+				<span class="qetext" ng-bind="question.Text"></span>
+				<section class="qeinfo">
+					<span>{{question.Answers.length}}</span> answers, 
+					<span ng-bind="question.Votes"></span> people voted,
+					 created on <span ng-bind="$getDate(question.DateCreated)"></span>
+					 at <span ng-bind="$getHours(question.DateCreated)"></span>
+					<div>
+						<a href="#/question/{{question.Id}}"><button class="fancyButtonBlue littleButton transitionFast">Open</button></a>
+					</div>
+				</section>
+			</li>
+			<li ng-hide="$questions.length">
+				<span class="qetext">No results!</span>
+			</li>
+		</ul>
+	</div>
+</div>

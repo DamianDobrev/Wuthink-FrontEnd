@@ -1,0 +1,197 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif !important;
+}
+body {
+}
+
+.topBorder {
+	height: 10px;
+	background: url('../images/bg.png') #1976D2 center repeat fixed;
+}
+
+#bodyContainer {
+	padding: 0;
+	background: #fff;
+
+}
+
+#mainContent {
+	min-height: 600px;
+}
+
+#logo {
+	padding: 0;
+}
+
+#logo a {
+	height: 40px;
+	margin: 15px 0 0 0;
+	border: 1px solid #1976D2;
+	color: #1976D2;
+	font-weight: bold;
+	display: block;
+	width: 190px;
+	line-height: 40px;
+	text-align: center;
+}
+
+#logo a:hover {
+	background: #1976D2;
+	color: #ffffff;
+	font-style: italic;
+}
+
+#bodyHeader {
+	min-height: 70px;
+	border-bottom: 1px solid #1976D2;
+}
+
+.navHeaderCollapse ul {
+	margin-right: 0;
+}
+
+.navHeaderCollapse li{
+	height: 60px;
+}
+
+.navHeaderCollapse li a {
+	display: block;
+	height: 40px;
+	margin: 15px 5px;
+	padding: 0;
+}
+
+.navHeaderCollapse li a button {
+	height: 40px;
+	width: 100%;
+	margin: 0;
+	padding: 0 10px;
+	outline: none;
+	border: 1px solid #1976D2;
+	transition: all 0.2s;
+
+	background: #fff;
+	color: #1976D2;
+	text-transform: uppercase;
+}
+
+.navHeaderCollapse li a button:hover {
+	color: #ffffff;
+	background: #1976D2;
+}
+
+#navToggle {
+	position: absolute;
+	right: 0;
+	margin: 0;
+	top: 15px;
+	height: 40px;
+}
+
+#navToggle .icon-bar {
+	background: #1976D2;
+}
+
+
+#bodyContainer > .mainFooter {
+	border-top: 1px solid #1976D2;
+	padding: 5px;
+	text-align: center;
+	color: #1976D2;
+	margin-top: 100px;
+	height: 40px;
+}
+
+.transitionFast {
+	transition: all 0.2s;
+}
+
+.title {
+	font-size: 28px;
+	color: #1976D2;
+	margin: 30px 0 15px 0;
+}
+
+.freeTxt {
+	font-size: 16px;
+	line-height: 24px !important;
+	margin: 0 0 35px 0;
+}
+
+.fullWidth {
+	width: 100%;
+}
+
+.fancyButtonWhite {
+	border: 1px solid #1976D2;
+	padding: 10px;
+	text-align: center;
+	background: #ffffff;
+	color: #1976D2;
+	outline: none;
+}
+
+.fancyButtonWhite:hover {
+	background: #1976D2;
+	color: #ffffff;
+}
+
+.fancyButtonBlue {
+	border: 1px solid #1976D2;
+	padding: 10px;
+	text-align: center;
+	background: #1976D2;
+	color: #ffffff;
+	outline: none;
+}
+
+.fancyButtonBlue:hover {
+	background: #ffffff;
+	color: #1976D2;
+}
+
+.fancyButtonGrey {
+	border: 1px solid #212121;
+	padding: 10px;
+	text-align: center;
+	background: #212121;
+	color: #ffffff;
+	outline: none;
+}
+
+.fancyButtonGrey:hover {
+	background: #ffffff;
+	color: #212121;
+	border: 1px solid #212121;
+}
+
+.unselectable {
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none;
+}
+
+@media (max-width: 768px) {
+	#logo {
+		position: absolute;
+		left:0;
+	}
+	.navHeaderCollapse {
+		padding: 0;
+	}
+	.navHeaderCollapse ul {
+		width: 100%;
+		margin: 80px 0 30px 0;
+		padding: 0;
+	}
+	.navHeaderCollapse ul li {
+		margin: 5px 0;
+		height: auto;
+	}
+	.navHeaderCollapse ul a {
+		margin: 0;
+		padding: 0;
+	}
+}

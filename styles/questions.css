@@ -1,0 +1,162 @@
+.filter {
+	display: block;
+	width: 100%;
+	background: #1976D2;
+	min-height: 80px;
+	padding: 15px;
+}
+
+.filterElement {
+	padding: 0 !important;
+	margin: 0 !important;
+	position: relative;
+}
+
+.filter span {
+	height: 40px;
+	line-height: 30px;
+	display: inline-block;
+	color: #ffffff;
+	margin: 0 10px 0 0;
+	width: 100%;
+}
+
+.filter .search input[type="text"]{
+	border: none;
+	height: 40px;
+	width: 100%;
+	background: #ffffff;
+	padding: 0 10px;
+	font-size: 16px;
+	outline: none;
+}
+
+.filter .search input[type="text"]:focus {
+}
+
+.filter .sort .dataToggle {
+	border: none;
+	height: 40px;
+	outline: none;
+	width: 140px;
+	max-width: 400px;
+	color: #1976D2;
+	background: #ffffff;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#sort {
+	width: 250px;
+	position: relative;
+	margin: 5px 0;
+}
+
+.trOptions {
+	width: 100%;
+	background: #ffffff;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	border-left: 1px solid #1976D2;
+	border-right: 1px solid #1976D2;
+	z-index: 200;
+}
+
+.trOptions li {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #1976D2;
+	padding: 0 10px;
+	color: #1976D2;
+	background: #ffffff;
+	z-index: 200;
+}
+
+.trOptions li:hover {
+	cursor: default;
+	background: #DFECF9;
+}
+
+.trSelectButton {
+	background: #1976D2;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	color: #ffffff;
+	width: 100%;
+	position: relative;
+
+}
+.arrowDown {
+	width: 0; 
+	height: 0; 
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #ffffff;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin: -3px 0 0 0;
+}
+
+#questionContainer {
+	margin: 20px 0;
+	border-top: 1px solid #1976D2;
+}
+
+#questionContainer li{
+	width: 100%;
+	border-bottom: 1px solid #1976D2;
+	min-height: 60px;
+	padding: 12px 0;
+	overflow: auto;
+}
+
+.qetext {
+	font-size: 18px;
+	color: #212121;
+	line-height: 36px;
+}
+
+.qeinfo {
+	margin: 6px 0;
+	font-size: 13px;
+	min-height: 26px;
+	position: relative;
+	line-height: 26px;
+	z-index: 0;
+	padding: 0 50px 0 0;
+}
+
+.qeinfo span {
+	color: #1976D2;
+	font-weight: bold;
+}
+.qeinfo div {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	margin-left: 5px;
+}
+.littleButton {
+	height: 26px;
+	line-height: 20px;
+	margin: 0;
+	padding: 0 5px;
+}
+
+.searchButton {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	height: 40px;
+}
+
+.searchButton:hover {
+	opacity: 0.8;
+	background: #212121;
+	color: #ffffff;
+}

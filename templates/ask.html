@@ -1,0 +1,55 @@
+<div class="page">
+	<h2 class="title">Create new question</h2>
+	<form>
+		<div class="formSection">
+			<label for="qtitle">Question itself</label>
+			<textarea type="text" id="qtitle" ng-model="$qtext"></textarea>
+		</div>
+		<ul id="answersUl">
+			<li ng-repeat="answer in $qanswers">
+				<div class="formSection">
+					<label for="qanswer1">Answer</label>
+					<input type="text" id="qanswer{{this.$index}}" ng-model="answer.text"><button class="fancyButtonWhite transitionFast removeAnswerButton" ng-click="removeAnswer(this)"><span></span></button>
+				</div>
+			</li>
+		</ul>
+		<div class="formSection">
+			<button class="fancyButtonBlue transitionFast addAnswerButton" ng-click="addNewAnswer()">
+				<span>+</span><span>Add another answer</span>
+			</button>
+		</div>
+
+		<div class="formSection">
+			<label for="qemail">Email [optional]</label>
+			<input type="text" id="qemail" ng-model="$qemail">
+		</div>
+
+		<div class="formSection">
+			<input class="checkboxRemove" type="checkbox" id="isHidden" ng-model="$isHidden">
+			<label class="checkboxLabel unselectable" for="isHidden">
+				<div></div>
+			</label>
+			<span class="labelLike">Make hidden?</span><span>?</span>
+		</div>
+
+		<div class="formSection">
+			<input class="checkboxRemove" type="checkbox" id="isMultipleChoice" ng-model="$isMultiChoice">
+			<label class="checkboxLabel unselectable" for="isMultipleChoice">
+				<div></div>
+			</label>
+			<span class="labelLike">Enable multiple choices</span><span>?</span>
+		</div>
+
+		<div class="formSection">
+			<label for="tags">Tags</label>
+			<input type="text" id="tags" ng-model="$tags">
+			<span class="example">Example: test1, myTag, anotherTag</span>
+		</div>
+
+		<div class="formSection">
+			<button class="fancyButtonGrey transitionFast" ng-click="$sendQuestion()">
+				Send
+			</button>
+		</div>
+	</form>
+</div>

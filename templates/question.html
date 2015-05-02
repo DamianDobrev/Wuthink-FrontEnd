@@ -1,0 +1,14 @@
+<div class="page">
+	<h2 class="title" ng-bind="$question.Text"></h2>
+	<ul id="answers">
+		<li ng-repeat="answer in $question.Answers">
+			<input id="{{answer.Id}}" name="answer" value="{{answer.Id}}">
+			<label class="unselectable" for="{{answer.Id}}">
+				<div></div>
+			</label>
+			<span ng-bind="answer.Text"></span>
+			<div class="votes"><span ng-bind="answer.Votes"></span><span> people voted</span></div>
+		</li>
+	</ul>
+	<button class="fancyButtonGrey transitionFast" ng-click="$vote()">Vote!</button>
+</div>
